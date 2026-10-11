@@ -121,7 +121,11 @@ public class Program
             Console.WriteLine();
             Console.WriteLine("===The Structure of the World ===");
             Console.WriteLine("The story of Beanith The Fog takes place in the Middle Ages.");
-            Console.WriteLine("A mysterious, thick fog has descended upon the kingdom of Vaeloria. Panic has gripped Greyhaven, the kingdom’s capital.");
+            Console.WriteLine("A mysterious, thick fog has descended upon the Kingdom of Vaeloria. Panic has gripped Greyhaven, the kingdom’s capital.");
+            Console.WriteLine("The Kingdom of Vaeloria is a poor kingdom in the south. Its inhabitants are mainly engaged in farming or fishing.");
+            Console.WriteLine("Lately, almost no one has been venturing out to sea; most ships mysteriously disappear and never return.");
+            Console.WriteLine("Vaeloria is not yet starving, but food has become much scarcer. Along with the fog came the plague. ");
+            
 
 
             while (true) {
