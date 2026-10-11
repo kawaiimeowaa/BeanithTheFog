@@ -1,4 +1,5 @@
 ﻿using System;
+using static Story;
 
 public class Program
 {
@@ -45,6 +46,13 @@ public class Program
             }
             else if (selectIndex >= menuItems.Length) {
                 selectIndex = menuItems.Length - 1;
+            }
+
+            // Button New Game
+            if (button == ConsoleKey.Enter) {
+                if (selectIndex == 0) {
+                    Start();
+                }
             }
 
             // Button tutorial
@@ -119,7 +127,8 @@ public class Program
 
             PrintCentered("=========================================== Lore ===========================================");
             Console.WriteLine();
-            Console.WriteLine("===The Structure of the World ===");
+            Console.WriteLine("Press BACKSPACE to return to the main menu.\n");
+            PrintCentered("===The Structure of the World ===");
             Console.WriteLine("The story of Beanith The Fog takes place in the Middle Ages.");
             Console.WriteLine("A mysterious, thick fog has descended upon the Kingdom of Vaeloria. Panic has gripped Greyhaven, the kingdom’s capital.");
             Console.WriteLine("The Kingdom of Vaeloria is a poor kingdom in the south. Its inhabitants are mainly engaged in farming or fishing.");
