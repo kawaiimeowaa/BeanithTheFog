@@ -5,7 +5,7 @@ public class Program
     public static void Main() {
         
 
-        string[] menuItems = { "New Game", "Load Game", "Tutorial", "Exit" };
+        string[] menuItems = { "New Game", "Load Game", "Tutorial", "Lore", "Exit" };
         int selectIndex = 0;
 
         
@@ -54,9 +54,16 @@ public class Program
                 }            
             }
 
-            //Button exit
+            // Button Lore
             if (button == ConsoleKey.Enter) {
                 if (selectIndex == 3) {
+                    Lore();
+                }
+            }
+
+            //Button exit
+            if (button == ConsoleKey.Enter) {
+                if (selectIndex == 4) {
                     return;
                 }
             }
@@ -96,6 +103,26 @@ public class Program
             Console.WriteLine("2. You earn money by exploring the world, opening chests and hiding places, and defeating enemies.\n");
             PrintCentered("=== Exploration ===");
             Console.WriteLine();
+
+            while (true) {
+                ConsoleKey button = Console.ReadKey(true).Key;
+
+                if (button == ConsoleKey.Backspace) {
+                    Console.Clear();
+                    return;
+                }
+            }
+        }
+
+        static void Lore() {
+            Console.Clear();
+
+            PrintCentered("=========================================== Lore ===========================================");
+            Console.WriteLine();
+            Console.WriteLine("===The Structure of the World ===");
+            Console.WriteLine("The story of Beanith The Fog takes place in the Middle Ages.");
+            Console.WriteLine("A mysterious, thick fog has descended upon the kingdom of Vaeloria. Panic has gripped Greyhaven, the kingdom’s capital.");
+
 
             while (true) {
                 ConsoleKey button = Console.ReadKey(true).Key;
