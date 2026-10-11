@@ -10,6 +10,7 @@ public class Story {
         string[] captions = {
             "\n\n\n\n\n\nIt’s an oppressive morning; a crow is cawing outside the window, and rays of sunlight are barely filtering through the thick fog, illuminating your house.",
             "\n\n\n\n\n\nThe air is cold.",
+            ""
         };
 
         int currentCaption = 0;
